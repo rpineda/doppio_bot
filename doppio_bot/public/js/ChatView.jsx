@@ -48,6 +48,7 @@ const ChatView = ({ sessionID }) => {
         session_id: sessionID,
       })
       .then((response) => {
+        console.log(response)
         setMessages((old) => {
           old.splice(old.length - 1, 1, {
             from: "ai",
